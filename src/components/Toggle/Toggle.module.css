@@ -1,0 +1,22 @@
+.Toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 3px solid var(--orange);
+  position: relative;
+  cursor: pointer;
+  padding: 6px;
+  gap: 0.3rem;
+  border-radius: 1rem;
+}
+.Toggle > * {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--orange);
+}
+.t_button {
+  position: absolute;
+  border-radius: 100%;
+  transition: all 0.3s;
+  background: var(--orange);
+}

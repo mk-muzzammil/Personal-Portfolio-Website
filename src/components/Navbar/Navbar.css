@@ -1,0 +1,46 @@
+.n-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 10vh;
+  margin-bottom: 3rem;
+}
+.n-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.n-name {
+  font-size: 25px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.n-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.anchortagsContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+.anchortagsContainer li {
+  font-weight: bold;
+}
+.anchortagsContainer li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+.n-button:hover {
+  cursor: pointer;
+  background: white;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  /* transition: 0.3s ease-out; */
+}

@@ -1,0 +1,115 @@
+.work_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.w_button {
+  align-self: baseline;
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+.work_left {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+
+  flex: 1;
+}
+.work_left > span:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.work_left > span:nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--orange);
+}
+.work_left > span:nth-child(3) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+}
+.work_right {
+  position: relative;
+  flex: 1;
+}
+.w_main_circle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+.w_main_circle > * {
+  position: absolute;
+}
+.w_main_circle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+.w_main_circle > :nth-child(2) {
+  top: 6rem;
+  left: -3rem;
+}
+.w_main_circle > :nth-child(3) {
+  top: 5rem;
+  left: 6rem;
+}
+.w_main_circle > :nth-child(4) {
+  top: 5rem;
+  left: 15rem;
+}
+.w_main_circle > :nth-child(5) {
+  top: 15rem;
+  left: 6rem;
+}
+.w_sec_circle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+.w_sec_circle > img {
+  transform: scale(0.5);
+}
+.brand {
+  width: 18rem;
+  border-radius: 50%;
+}
+.brand_ozeito {
+  width: 30rem;
+}
+.w_back_circle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.blue_Circle {
+  background: #1949b8;
+  left: 18rem;
+  top: 0rem;
+}
+.yellow_Circle {
+  background: #f5c32c;
+  left: 18rem;
+  top: 8rem;
+}

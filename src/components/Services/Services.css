@@ -1,0 +1,70 @@
+.services-Wrapper {
+  position: relative;
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  height: 75vh;
+  margin: 9rem 0rem 13rem 0rem;
+  justify-content: center;
+}
+.services-left {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+
+  flex: 1;
+}
+.services-left > span:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+}
+.services-left > span:nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--orange);
+}
+.services-left > span:nth-child(3) {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+}
+.s-button {
+  align-self: baseline;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+}
+.services-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.cards {
+  position: relative;
+}
+.cards > * {
+  position: absolute;
+}
+
+.s-blur1 {
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  z-index: -9;
+  position: absolute;
+  top: 30%;
+  left: -14%;
+  filter: blur(62px);
+}
+.s-blur2 {
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #d4b8e6;
+  z-index: -10;
+  position: absolute;
+  top: 23%;
+  right: 1%;
+  filter: blur(79px);
+}
