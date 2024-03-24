@@ -6,6 +6,7 @@ import Fiverr from "../../img/fiverr.png";
 import Wordpress from "../../img/Wordpress.png";
 import Frontend_mentor from "../../img/FrontendMentor.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 const Work = () => {
   const circleVariants = {
     start: {
@@ -39,8 +40,9 @@ const Work = () => {
           <br />
           Lorem ipsum dolor sit amet consectetur.
         </span>
-
-        <button className={styles.w_button}>Hire Me</button>
+        <Link spy={true} to="Contact" smooth={true}>
+          <button className={styles.w_button}>Hire Me</button>
+        </Link>
       </div>
       <div className={styles.work_right}>
         <motion.div

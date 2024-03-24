@@ -68,3 +68,33 @@
   right: 1%;
   filter: blur(79px);
 }
+@media screen and (max-width: 1000px) {
+  .services-Wrapper {
+    flex-direction: column;
+  }
+  .services-right {
+    transform: scale(0.8);
+  }
+  .services-left {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .services-Wrapper {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 2rem;
+    height: 25rem;
+    padding: 0;
+    margin-top: 30rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .cards > * {
+    position: static;
+  }
+}

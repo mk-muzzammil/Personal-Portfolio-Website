@@ -2,8 +2,12 @@ import React from "react";
 import "./Navbar.css";
 import Toggle from "../Toggle/Toggle";
 import { Link } from "react-scroll";
-
+import BarIcon from "@iconscout/react-unicons/icons/uil-bars";
+import { themeContext } from "../../context";
+import { useContext } from "react";
 const Navbar = () => {
+  const theme = useContext(themeContext);
+  const dakrMode = theme.state.darkMode;
   return (
     <div className="n-wrapper" id="Navbar">
       <div className="n-left">
@@ -11,6 +15,9 @@ const Navbar = () => {
         <Toggle />
       </div>
       <div className="n-right">
+        {/* <div id="barIcon">
+          <BarIcon color={"var(--orange)"} size={"2rem"} />
+        </div> */}
         <ul className="anchortagsContainer">
           <Link spy={true} to="Navbar" smooth={true} activeClass="activeClass">
             <li>Home</li>

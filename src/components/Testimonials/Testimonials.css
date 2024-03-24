@@ -57,3 +57,28 @@
 .t-wrapper .swiper-pagination-bullet-active {
   background: var(--orange);
 }
+
+@media screen and (max-width: 1000px) {
+  .testimonial {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .t-wrapper {
+    height: 90vh;
+  }
+}
+@media (max-width: 500px) {
+  .t-wrapper {
+    margin-top: 2rem; /* Adjust margin for smaller screens */
+  }
+
+  .testimonial {
+    width: 92%; /* Adjust width for smaller screens */
+    height: auto; /* Make height auto for content to adjust */
+  }
+
+  .t-wrapper .swiper {
+    height: auto; /* Make height auto for content to adjust */
+  }
+}

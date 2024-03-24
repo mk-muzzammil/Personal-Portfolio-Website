@@ -47,3 +47,18 @@
   border-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
   background: black;
 }
+@media screen and (max-width: 1000px) {
+  .experience_wrapper {
+    margin-top: 21rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .experience_wrapper {
+    margin-top: 19rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .experience_wrapper {
+    gap: 1.5rem;
+  }
+}

@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 import "./intro.css";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import thumbsUp from "../../img/thumbup.png";
+import { Link } from "react-scroll";
+
 const Intro = () => {
   const transition = { duration: 2, type: "spring", stiffness: 50 };
   return (
@@ -23,7 +25,9 @@ const Intro = () => {
             Frontend Developer with High level experiece in web designing and
             web development.Currently engaged in learning MERN Stack.
           </span>
-          <button className=" button i-button">Hire Me</button>
+          <Link spy={true} to="Contact" smooth={true}>
+            <button className=" button i-button">Hire Me</button>
+          </Link>
         </div>
 
         <div className="i-icons">
@@ -54,11 +58,12 @@ const Intro = () => {
           whileInView={{ left: "68%" }}
           transition={transition}
           style={{ top: "-4%", right: 0 }}
+          className="floating-div"
         >
           <FloatingDiv image={crown} txt1="Web" txt2="Developer" />
         </motion.div>
         <motion.div
-          initial={{ left: "9rem", top: "18rem" }}
+          initial={{ left: "9rem", top: "23rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
           className="floating-div"

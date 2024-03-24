@@ -113,3 +113,34 @@
   left: 18rem;
   top: 8rem;
 }
+@media screen and (max-width: 1000px) {
+  .work_wrapper {
+    flex-direction: column;
+  }
+  .work_right {
+    margin-top: 2rem;
+    right: 12%;
+  }
+  .work_left {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 810px) {
+  .work_right {
+    margin-top: 2rem;
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work_wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .work_right {
+    flex: 0;
+    right: 37%;
+    transform: scale(0.7);
+  }
+}

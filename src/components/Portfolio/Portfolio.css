@@ -29,6 +29,7 @@
 }
 .portfolio img {
   width: 30rem;
+  max-width: 100%;
   height: auto;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border: 20px;
@@ -45,4 +46,48 @@
   background-color: var(--white);
   transition: all 0.3s ease;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+  .portfolio {
+    padding-right: 2rem;
+  }
+  .portfolio span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .portfolio span:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .portfolio-slider {
+    margin-top: 2rem;
+  }
+
+  .portfolio-slider .swiper-slide {
+    width: 100%;
+  }
+
+  .portfolio img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust slidesPerView to 1 for mobile */
+  .swiper-container:not(.swiper-container-initialized) .swiper-wrapper {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .portfolio {
+    margin-top: 6rem;
+  }
 }
