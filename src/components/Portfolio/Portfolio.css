@@ -47,6 +47,16 @@
   transition: all 0.3s ease;
   margin-bottom: 3rem;
 }
+#Morechellenges {
+  margin: 1.5rem;
+}
+#Morechellenges a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--orange);
+}
 
 @media (max-width: 500px) {
   .portfolio {

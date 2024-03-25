@@ -52,13 +52,14 @@
     margin-top: 21rem;
   }
 }
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .experience_wrapper {
-    margin-top: 19rem;
+    margin-top: 10rem;
   }
-}
+} */
 @media screen and (max-width: 500px) {
   .experience_wrapper {
     gap: 1.5rem;
+    margin-top: -8rem;
   }
 }

@@ -13,11 +13,13 @@ const Services = () => {
       <div className="services-left">
         <span>My Awesome</span>
         <span>Services</span>
+
         <span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          harum cum nesciunt.
+          I excel in crafting custom desktop and web applications,focused
           <br />
-          Lorem ipsum dolor sit amet consectetur.
+          on innovation and client satisfaction.
+          <br />
+          Elevate your online presence with my expert development services.
         </span>
 
         <a href={resume} download>

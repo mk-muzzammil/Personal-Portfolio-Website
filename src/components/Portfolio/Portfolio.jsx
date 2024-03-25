@@ -73,6 +73,14 @@ const Portfolio = () => {
           <img src={ClipArt} alt="Clip Art Web App" />
         </SwiperSlide>
       </Swiper>
+      <div id="Morechellenges">
+        <a
+          style={{ color: darkMode ? "white" : "" }}
+          href="https://github.com/mk-muzzammil?tab=repositories"
+        >
+          View More Projects here ....
+        </a>
+      </div>
       <style>{paginationStyles}</style>
     </div>
   );

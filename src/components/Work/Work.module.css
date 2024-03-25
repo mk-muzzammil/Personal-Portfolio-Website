@@ -119,7 +119,7 @@
   }
   .work_right {
     margin-top: 2rem;
-    right: 12%;
+    right: 5%;
   }
   .work_left {
     align-items: center;
@@ -142,5 +142,20 @@
     flex: 0;
     right: 37%;
     transform: scale(0.7);
+  }
+  .work_left span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .work_left span:nth-child(2) {
+    font-size: 2rem;
+  }
+  .w_main_circle {
+    left: 45%;
+  }
+  .blue_Circle {
+    left: 98%;
+  }
+  .yellow_Circle {
+    left: 98%;
   }
 }

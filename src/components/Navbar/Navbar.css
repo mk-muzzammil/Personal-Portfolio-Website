@@ -51,6 +51,10 @@
   .n-right {
     display: none;
   }
+  .n-left {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .n-wrapper {

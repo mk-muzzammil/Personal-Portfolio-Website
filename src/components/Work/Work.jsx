@@ -7,7 +7,11 @@ import Wordpress from "../../img/Wordpress.png";
 import Frontend_mentor from "../../img/FrontendMentor.png";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { themeContext } from "../../context";
+import { useContext } from "react";
 const Work = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const circleVariants = {
     start: {
       rotate: 0,
@@ -32,13 +36,16 @@ const Work = () => {
   return (
     <div className={styles.work_wrapper}>
       <div className={styles.work_left}>
-        <span>Work For all These</span>
+        <span style={{ color: darkMode ? "white " : "" }}>
+          Work For all These
+        </span>
         <span>Brands and Clients</span>
         <span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          harum cum nesciunt.
+          With a proven track record of success, I partner with brands and
+          clients to
           <br />
-          Lorem ipsum dolor sit amet consectetur.
+          deliver exceptional solutions, ensuring satisfaction and tangible
+          results.
         </span>
         <Link spy={true} to="Contact" smooth={true}>
           <button className={styles.w_button}>Hire Me</button>
