@@ -6,6 +6,9 @@ import Ecommerce from "../../img/Ecomerce.png";
 import JavaEER from "../../img/EER Diagram (1).png";
 import blogrLandingPage from "../../img/Blogr.png";
 import ClipArt from "../../img/ClipArt.png";
+import Elib from "../../img/ELibClient.png";
+import ElibDashboard from "../../img/Dashboard.png";
+
 import Parallex from "../../img/Parallex.png";
 
 import myTunesWeb from "../../img/myTunes.png";
@@ -71,6 +74,12 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide className="projectCard">
           <img src={ClipArt} alt="Clip Art Web App" />
+        </SwiperSlide>
+        <SwiperSlide className="projectCard">
+          <img src={Elib} alt="ELibrary Client" />
+        </SwiperSlide>
+        <SwiperSlide className="projectCard">
+          <img src={ElibDashboard} alt="ELibrary Dashboard" />
         </SwiperSlide>
       </Swiper>
       <div id="Morechellenges">

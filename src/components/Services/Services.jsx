@@ -62,7 +62,7 @@ const Services = () => {
           >
             <Card
               image={GlasseEmoji}
-              primary="Backend Developer"
+              primary="MERN Stack Developer"
               secondary="React JS,Express JS ,Node JS, Mongo DB"
             />
           </motion.div>
