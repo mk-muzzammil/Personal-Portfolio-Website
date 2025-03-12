@@ -10,7 +10,7 @@ const Card = ({ image, primary, secondary }) => {
       className="card-wrapper"
       style={{ background: darkMode ? "#292727" : "" }}
     >
-      <img src={image} alt="Card Image" />
+      <img src={image} alt="Card visual representation" />
       <span style={{ color: darkMode ? "white" : "" }} className="primaryText">
         {primary}
       </span>
