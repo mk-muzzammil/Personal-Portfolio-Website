@@ -25,14 +25,12 @@ import meta from "./company/meta.png";
 import shopify from "./company/Ozeito.png";
 import DHLogo from "./company/DHLogo.ico";
 import tesla from "./company/tesla.png";
-
-import carrent from "./kobii.png";
-import jobit from "./Chellenge.png";
-import tripguide from "./tripguide.jpg";
-import challengeWeb from "./challengeWeb.png";
-import GieneWeb from "./GieneWeb.png";
-import dubaiClient from "./dubaiClient.png";
-
+import carrent from "./projects/Kobii.png";
+import jobit from "./projects/Chellenge.png";
+import tripguide from "./projects/tripguide.jpg";
+import challengeWeb from "./projects/challengeWeb.png";
+import GieneWeb from "./projects/GieneWeb.png";
+import dubaiClient from "./projects/dubaiClient.png";
 import person1 from "./Testimonials/person1.png";
 import person2 from "./Testimonials/person2.png";
 import person3 from "./Testimonials/person3.png";
