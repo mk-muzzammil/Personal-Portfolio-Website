@@ -29,7 +29,7 @@ import {
   challengeWeb,
   GieneWeb,
   dubaiClient,
-} from "../assets";
+} from "../assets/index";
 
 export const navLinks = [
   {
