@@ -8,7 +8,9 @@ import {
   useTexture,
 } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import { detectDeviceCapabilities } from "../../utils/ThreeJsUtils";
 
+// This component remains exactly the same as your original
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
   return (
@@ -35,8 +37,26 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  // Get device capabilities for optimization without changing the model
+  const capabilities =
+    typeof window !== "undefined"
+      ? detectDeviceCapabilities()
+      : {
+          isMobile: false,
+          dpr: [1, 2],
+          glSettings: { preserveDrawingBuffer: true },
+        };
+
   return (
-    <Canvas frameLoop="demand" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      frameLoop="demand"
+      dpr={capabilities.dpr} // Optimize resolution based on device
+      gl={{
+        preserveDrawingBuffer: true,
+        powerPreference: capabilities.isMobile ? "default" : "high-performance",
+        alpha: true,
+      }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
